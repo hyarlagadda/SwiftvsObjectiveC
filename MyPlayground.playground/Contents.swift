@@ -34,8 +34,23 @@ func cubeOfNumber(x: Int) -> Int {
     return x * x * x
 }
 
+
+/*:
+### Function is assigned to a variable
+
+constant square & cube are of a type that accepts a Int and returns a Int
+*/
+
 let square: (Int) -> Int = squareOfNumber
 let cube: (Int) -> Int = cubeOfNumber
+
+/*:
+### Function accepts a function as parameter
+
+* sumOfNumbers accepts a Array and a function that accepts a Int and returns a Int
+
+* Any function that accepts a Int and return a Int can be passed as second parameter
+*/
 
 func sumOfNumbers(nums: [Int], myOperation: (Int) -> Int) -> Int {
     
