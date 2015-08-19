@@ -54,8 +54,8 @@ let cube: (Int) -> Int = cubeOfNumber
 
 func sumOfNumbers(nums: [Int], myOperation: (Int) -> Int) -> Int {
     
-    return nums.map(myOperation).reduce(0, combine: {$0 + $1})
-    //return nums.map({$0 * $0}).reduce(0, combine: {$0 + $1})
+    //return nums.map(myOperation).reduce(0, combine: {$0 + $1})
+    return nums.map({$0 * $0}).reduce(0, combine: {$0 + $1})
 }
 
 /*:
